@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails du produit - iPhone 14 Pro</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
+    header { background: #111; color: white; padding: 15px; text-align: center; }
+    nav { display: flex; justify-content: center; background: #222; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffcc00; }
+
+    .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 30px; }
+    .image { flex: 1; min-width: 300px; }
+    .image img { width: 100%; border-radius: 10px; }
+
+    .details { flex: 1; min-width: 300px; background: rgb(228, 126, 59); padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .details h2 { margin-top: 0; }
+    .details p { margin: 10px 0; }
+    .price { font-size: 22px; font-weight: bold; color: #e60000; }
+
+    button { margin-top: 20px; padding: 12px 20px; border: none; background: #111; color: white; cursor: pointer; border-radius: 8px; font-size: 16px; }
+    button:hover { background: #444; }
+  </style>
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <h1>Détails du produit</h1>
+  </header>
+
+  <!-- Menu de navigation -->
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="catalogue.html">Boutique</a>
+    <a href="panier.html">Panier</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Contenu principal -->
+  <div class="container">
+    <!-- Image produit -->
+    <div class="image">
+      <img src="image/WhatsApp Image 2025-03-19 à 00.57.23_e1808560.jpg" alt="iPhone 14">
+    </div>
+
+    <!-- Détails produit -->
+    <div class="details">
+      <h2>iPhone 14 </h2>
+      <p class="price">220 000 FCFA</p>
+      <p><strong>Caractéristiques :</strong></p>
+      <ul>
+        <li>Écran 6.1" Super Retina XDR</li>
+        <li>128 Go de stockage</li>
+        <li>Triple caméra 108MP</li>
+        <li>iOS 18 dernière version</li>
+      <br><br>
+      <button onclick="window.location.href='catalogue.html'">⬅ Retour à la boutique</button>
+      <button onclick="ajouterPanier('iPhone 14', 220000)">🛒 Ajouter au panier</button>
+
+<script>
+  function ajouterPanier(nom, prix) {
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    panier.push({ nom: nom, prix: prix });
+    localStorage.setItem("panier", JSON.stringify(panier));
+    alert(nom + " ajouté au panier !");
+  }
+</script>
+
+    </div>
+  </div>
+</body>
+</html>

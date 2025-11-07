@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MC STORE PRO</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #383999; }
+    header { background: #111; color: #fff; padding: 15px; text-align: center; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .product { background: #fff; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .product img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; }
+    .product h3 { margin: 10px 0; }
+    .product p { color: #555; }
+    .product button { margin-top: 10px; padding: 10px; width: 100%; border: none; background: #111; color: white; cursor: pointer; border-radius: 5px; font-weight: bold; }
+    .product button:hover { background: #444; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MC STORE PRO</h1>
+     <!-- Menu de navigation -->
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="catalogue.html">Boutique</a>
+    <a href="panier.html">Panier</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  </header>
+  <div class="container">
+    <h2>🔥 Produits phares</h2>
+    <div class="grid">
+      <div class="product">
+        <img src="image/WhatsApp Image 2025-03-19 à 00.57.23_e1808560.jpg" alt="iPhone 14">
+        <h3>iPhone 14 </h3>
+        <p>Prix : 220 000 FCFA</p>
+        <button onclick="window.location.href='produit-iphone14.html'">Voir le produit</button>
+        <br>
+      </div>
+      <div class="product">
+        <img src="image/WhatsApp Image 2025-09-09 at 16.42.05_31038cc5.jpg" alt="huawei">
+        <h3>huawei</h3>
+        <p>Prix :  85 000 FCFA</p>
+        <button onclick="window.location.href='produit-huawei.html'">Voir le produit</button>
+      </div>
+      <div class="product">
+        <img src="image/iphone 16 .jpg" alt="iphone 16">
+        <h3>iphone 16</h3>
+        <p>Prix : 550 000 FCFA</p>
+        <button onclick="window.location.href='produit-iphone16.html'">Voir le produit</button>
+       </div>
+      <div class="product">
+        <img src="image/redmi note11.jpg" alt="iphone 16">
+        <h3>redmi note 11</h3>
+        <p>Prix : 97.5 000 FCFA</p>
+        <button onclick="window.location.href='produit-redmi note 11.html'">Voir le produit</button>
+       </div>
+      <div class="product">
+        <img src="image/iphone 11.jpg" alt="iphone 16">
+        <h3>ipone 11</h3>
+        <p>Prix : 111 000 FCFA</p>
+        <button onclick="window.location.href='produit-iphone 11.html'">Voir le produit</button>
+       </div> 
+      <div class="product">
+         <img src="image/samsung zlip 3.jpg" alt="iphone 16">
+        <h3>samsung zflip 3</h3>
+        <p>Prix : 132 000 FCFA</p>
+        <button onclick="window.location.href='produit-zflip 3.html'">Voir le produit</button>
+      </div>
+      <div class="product">
+         <img src="image/pixel 6 pro.jpg" alt="iphone 16">
+        <h3>pixel 6 pro</h3>
+        <p>Prix : 110 000 FCFA</p>
+        <button onclick="window.location.href='produit-pixel 6 pro.html'">Voir le produit</button>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="window.location.href='index.html'">⬅ Retour à la boutique</button>
+  <script>
+  function ajouterPanier(produit) {
+    alert(produit + " ajouté au panier !");
+    // plus tard, on utilisera localStorage ou PHP pour un vrai panier
+  }
+</script>
+</body>
+</html>

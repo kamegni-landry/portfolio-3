@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mon Site E-commerce</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #ff6f61, #6a11cb);
+      color: #fff;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    header nav ul li {margin: 0 15px;}
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    header nav ul li a:hover {color: #ffd700;}section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h1 {font-size: 3rem; margin-bottom: 60px;}
+#hero p {font-size: 2.2rem; margin-bottom: 70px;}
+.btn {
+  background: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.btn:hover {transform: scale(1.1);}
+
+.project-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  transition: transform 0,3%;
+}
+.projet img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.project-card:hover {transform: translateY(-10px);}
+
+.skill {
+  margin: 15px 0;
+  text-align: left;
+  width: 80%;
+  max-width: 500px;
+}
+.skill-name {margin-bottom: 5px; font-weight: bold;}
+.skill-bar {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.skill-fill {
+  height: 20px;
+  width: 0;
+  background: #ffd700;
+  border-radius: 20px;
+  text-align: right;
+  padding-right: 5px;
+  color: #333;
+  font-size: 0.8rem;
+  line-height: 20px;
+  transition: width 2s;
+}
+
+footer {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #hero h1 {font-size: 2rem;}
+  header nav ul {flex-direction: column;}
+  header nav ul li {margin: 10px 0;}
+}
+
+ .profil-photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  background-image: url('image/photo de profile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+  </style>
+</head>
+<body>  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  <section id="hero">
+      <div class="profil-photo">
+    </div>
+    <h1> BONJOUR, JE SUIS KENMOGNE KAMEGNI PRINCE LANDRY</h1>
+    <p>Apprentir developpeur, voici mon portfolio pour présenter mon site e-commerce.</p>
+    <a href="#projects" class="btn">Découvrir mon projet</a>
+  </section> 
+   <section id="about">
+    <h2><u>À propos de moi</u></h2>
+    <p><b>Je suis passionné par la création de sites modernes, interactifs et responsives.</b></p>
+    <p><b>je suis aussi un etudiant de deuxieme a l'institut universitaire de technologie de Douala en cycle DUT</b></p>
+    <p><b>j'ai fait un parcour primaire et secondaire en section anglophone. je suis tutilaire d'un GCE advanced level en science obtenu dans l'annee 2024-2025</b></p>
+  </section> 
+   <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="project-card">
+      <div class="projet">
+        <img src="image/WhatsApp Image 2025-03-11 à 00.38.16_ac628f5a.jpg"  alt="projet">     
+        <h3>Site E-commerce</h3>
+        <p>Un site complet avec inscription, panier et paiement en ligne (simulation Python).</p>
+        <a href="./index.html" target="_blank" class="btn">Visiter le site</a>
+      </div>
+    </div>
+  </section>  <section id="skills">
+    <h2>Mes Compétences</h2>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+       <div class="skill-bar"><div class="skill-fill" style="width: 50%">50%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 45%">45%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 15%">15%</div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 10%">10%</div></div>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+       <input type="text" placeholder="Votre nom" required><br><br>
+      <input type="contact" placeholder="Votre numero" required><br><br>
+      <textarea placeholder="Votre message" rows="5" required></textarea><br><br>
+        <p>🔗 WhatsApp : <a href="https://wa.me/237693628807" target="_blank" class="btn">Cliquez ici</a></p><br><br>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section> 
+  <script>
+    // Animation simple lors du scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 200;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.style.opacity = 1;
+          sec.style.transform = "translateY(0)";
+          sec.style.transition = "all 0.8s ease-in-out";
+        }
+      });
+    });
+  </script>
+ </body>
+</html>
