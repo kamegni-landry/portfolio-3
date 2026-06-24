@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inscription - USA LOTTERY 2026</title>
+  <style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  a { color: inherit; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      background:url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') center/cover no-repeat;
+      opacity:.04;
+      pointer-events:none;
+      z-index:-1;
+    }
+
+    .header {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0052cc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-flag {
+      width: 28px;
+      height: 20px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      flex: 0 0 auto;
+    }
+    .nav { display: flex; gap: 24px; align-items: center; }
+    .nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .nav a:hover { color: #0052cc; }
+
+    .btn-nav {
+      background: #0052cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .btn-nav:hover { background: #003d99; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .page {
+      padding: 42px 0 80px;
+    }
+
+    .hero-mini {
+      background: linear-gradient(135deg, rgba(0,82,204,0.12), rgba(0,82,204,0.02));
+      border: 1px solid rgba(0,82,204,0.18);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-mini::after{
+      content:'';
+      position:absolute;
+      inset:-60px -60px auto auto;
+      width:220px;
+      height:220px;
+      background: radial-gradient(circle at 30% 30%, rgba(0,82,204,0.35), rgba(0,82,204,0));
+      transform: rotate(25deg);
+      pointer-events:none;
+    }
+    .hero-mini h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: #001f3f;
+    }
+    .hero-mini p { color: #4b5563; max-width: 800px; }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .card-header {
+      padding: 22px;
+      border-bottom: 1px solid #e0e0e0;
+      background: #ffffff;
+    }
+    .card-header h2 {
+      font-size: 1.2rem;
+      color: #0052cc;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card-body { padding: 22px; }
+
+    .form-section { margin-bottom: 24px; }
+    .form-section h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #0052cc;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #0052cc;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .form-group { display: flex; flex-direction: column; }
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: all 0.2s;
+      background: #fff;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #0052cc;
+      box-shadow: 0 0 0 3px rgba(0,82,204,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+
+    .ticket-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .ticket-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,82,204,0.06);
+      border: 1px solid rgba(0,82,204,0.12);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 800;
+      color: #0b2b55;
+    }
+    .ticket-option input { accent-color: #0052cc; }
+
+    .form-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      flex-wrap: wrap;
+    }
+    .btn-cancel {
+      flex: 1;
+      padding: 12px 14px;
+      background: #f0f0f0;
+      color: #333;
+      border: none;
+      border-radius: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+      min-width: 180px;
+    }
+    .btn-cancel:hover { background: #e0e0e0; }
+    .btn-submit {
+      flex: 1;
+      padding: 12px 14px;
+      background: #0052cc;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.2s;
+      min-width: 220px;
+    }
+    .btn-submit:hover { background: #003d99; }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 2000;
+      animation: slideIn 0.25s ease;
+    }
+    .toast.show { display: block; }
+
+    @keyframes slideIn {
+      from { transform: translateX(200px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 40px 0 20px;
+      margin-top: 60px;
+    }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .footer-bottom {
+      margin-top: 12px;
+      color: #999;
+      font-size: 0.85rem;
+      border-top: 1px solid #333;
+      padding-top: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .nav { width: 100%; flex-direction: column; align-items: flex-start; gap: 10px; }
+      .hero-mini h1 { font-size: 1.6rem; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-actions { flex-direction: column; }
+      .btn-cancel, .btn-submit { min-width: 100%; }
+      .hero-mini { padding: 18px; }
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <div class="logo"><img class="logo-flag" src="th.webp" alt="USA flag"> USA LOTTERY 2026</div>
+      <div class="nav">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#mentions">Mentions Légales</a>
+        <button class="btn-nav" type="button" onclick="window.location.href='index.html#accueil'">Retour</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="page">
+    <div class="container">
+      <div class="hero-mini">
+        <h1>Inscription USA LOTTERY 2026</h1>
+        <p>Remplissez le formulaire en ligne. Après validation, vous serez redirigé vers le paiement sécurisé (Chariow).</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>✅ Formulaire d'inscription</h2>
+        </div>
+        <div class="card-body">
+          <form id="registrationForm" onsubmit="handleSubmit(event)">
+            <div class="form-section">
+              <h3>👤 Informations Personnelles</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Prénom *</label>
+                  <input type="text" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label>Nom *</label>
+                  <input type="text" name="lastName" required />
+                </div>
+                <div class="form-group">
+                  <label>Date de naissance *</label>
+                  <input type="date" name="birthDate" required />
+                </div>
+                <div class="form-group">
+                  <label>Nationalité *</label>
+                  <select name="nationality" required>
+                    <option value="">Sélectionnez...</option>
+                    <option value="cameroun">Cameroun</option>
+                    <option value="senegal">Sénégal</option>
+                    <option value="ivoire">Côte d'Ivoire</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="benin">Bénin</option>
+                    <option value="togo">Togo</option>
+                    <option value="mali">Mali</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>📞 Contact</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Email *</label>
+                  <input type="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label>Téléphone *</label>
+                  <input type="tel" name="phone" required />
+                </div>
+                <div class="form-group">
+                  <label>Adresse *</label>
+                  <input type="text" name="address" required />
+                </div>
+                <div class="form-group">
+                  <label>Pays de résidence *</label>
+                  <input type="text" name="country" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>💼 Situation Professionnelle</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Métier/Profession *</label>
+                  <select name="profession" required>
+                    <option value="">Sélectionnez...</option>
+                    <option value="ingenieur">Ingénieur</option>
+                    <option value="medecin">Médecin</option>
+                    <option value="avocat">Avocat</option>
+                    <option value="comptable">Comptable</option>
+                    <option value="informatique">Informatique/IT</option>
+                    <option value="commerce">Commerce/Vente</option>
+                    <option value="enseignant">Enseignant</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="manager">Manager</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Expérience (années) *</label>
+                  <input type="number" name="experience" required min="0" max="60" />
+                </div>
+
+                <div class="form-group">
+                  <label>Secteur d'activité *</label>
+                  <select name="sector" required>
+                    <option value="">Sélectionnez...</option>
+                    <option value="tech">Technologie</option>
+                    <option value="sante">Santé</option>
+                    <option value="finance">Finance</option>
+                    <option value="education">Éducation</option>
+                    <option value="construction">Construction</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>👨‍👩‍👧 Situation Familiale</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>État civil *</label>
+                  <select name="maritalStatus" required>
+                    <option value="">Sélectionnez...</option>
+                    <option value="celibataire">Célibataire</option>
+                    <option value="marie">Marié(e)</option>
+                    <option value="divorce">Divorcé(e)</option>
+                    <option value="veuf">Veuf(ve)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Nombre d'enfants *</label>
+                  <select name="children" required>
+                    <option value="">Sélectionnez...</option>
+                    <option value="0">Aucun</option>
+                    <option value="1">1 enfant</option>
+                    <option value="2">2 enfants</option>
+                    <option value="3">3 enfants</option>
+                    <option value="4">4 enfants</option>
+                    <option value="5+">5 enfants ou plus</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="form-section">
+              <h3>📎 Téléverser vos documents</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Pièce d’identité (photo ou PDF) *</label>
+                  <input type="file" name="documentId" accept="image/*,application/pdf" required />
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>🎟️ Nombre de Tickets</h3>
+              <div class="ticket-row">
+
+                <label class="ticket-option">
+                  <input type="radio" name="tickets" value="1" checked required /> 1 Ticket - 2000 FCFA
+                </label>
+                <label class="ticket-option">
+                  <input type="radio" name="tickets" value="5" required /> 5 Tickets - 10000 FCFA
+                </label>
+                <label class="ticket-option">
+                  <input type="radio" name="tickets" value="10" required /> 10 Tickets - 20000 FCFA
+                </label>
+                <label class="ticket-option">
+                  <input type="radio" name="tickets" value="20" required /> 20 Tickets - 40000 FCFA
+                </label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <label style="display:flex; align-items:flex-start; gap:10px; font-weight:700;">
+                <input type="checkbox" name="agree" required style="margin-top: 4px; accent-color:#0052cc;" />
+                <span>J'accepte les conditions d'utilisation et la politique de confidentialité</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn-cancel" onclick="window.location.href='USA_LOTTERY_REAL_PHOTOS.html#accueil'">Annuler</button>
+              <button type="submit" class="btn-submit">Paiement via Chariow</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>© 2026 USA Lottery. Tous droits réservés. Aucun résultat ni gain garanti.</div>
+      <div class="footer-bottom"><a href="USA_LOTTERY_REAL_PHOTOS.html#mentions" style="color:#7dd3fc; text-decoration:underline;">Voir les mentions légales</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+
+      // Note: FormData contient aussi des fichiers, mais on ne les stocke pas en localStorage.
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      // Supprime les champs fichier (pour éviter problèmes de sérialisation)
+      delete data.documentId;
+      delete data.documentProof;
+
+      localStorage.setItem('lotteryData', JSON.stringify(data));
+      showToast('✓ Inscription validée! Redirection vers le paiement...');
+
+      setTimeout(() => {
+        // Redirection vers ton lien Chariow (sans calcul du montant)
+        window.location.href = 'https://hyuopnka.mychariow.co/prd_p33s9kb2';
+      }, 1200);
+    }
+
+  </script>
+</body>
+</html>
+
